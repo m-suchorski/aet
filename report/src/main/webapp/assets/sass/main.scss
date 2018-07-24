@@ -155,6 +155,10 @@ body {
 	&.passed {
 		color: $passed !important;
 	}
+
+	&.conditional {
+		color: conditional !important;
+	}
 }
 
 .url-tile {
@@ -163,6 +167,10 @@ body {
 
 	&.passed {
 		color: $passed;
+	}
+
+	&.conditional {
+		color: $conditional;
 	}
 
 	&.rebased {

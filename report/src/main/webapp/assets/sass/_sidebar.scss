@@ -91,6 +91,10 @@
         color: $passed;
       }
 
+      &.conditional {
+        color: $conditional;
+      }
+
       &.warning {
         color: $warning;
       }
@@ -184,6 +188,10 @@
 
         &.passed {
           color: $passed;
+        }
+
+        &.conditional {
+          color: $conditional;
         }
 
         &.warning {

@@ -85,6 +85,15 @@
       }
     }
 
+    &.conditional {
+      background: $conditional_bg;
+      border-top: solid 10px $conditional;
+
+      span, svg {
+        color: conditional;
+      }
+    }
+
     &.failed,
     &.processing_error {
       background: $failed_bg;
