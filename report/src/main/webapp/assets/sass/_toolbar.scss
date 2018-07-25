@@ -99,6 +99,26 @@
     }
   }
 
+  &-generate-raport {
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    .raport-button {
+      background-color: $rebased_bg;
+      padding:10px 15px;
+      font-weight: bold;
+      color:$text_color;
+
+      &:hover {
+        cursor:pointer;
+      }
+    }
+
+
+  }
+
   &-bottom {
     display: flex;
     justify-content: space-between;
@@ -190,7 +210,7 @@
     }
 
     .tab-content-toolbar & {
-      padding-top: 3px;
+      padding-top: 0px;
       padding-right: 15px;
       height: 47px;
     }
@@ -226,6 +246,7 @@
 
   .toolbar-btns, .comments-status {
     width: auto;
+    padding-right:18px;
   }
 
   .toolbar-blocks {

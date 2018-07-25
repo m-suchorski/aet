@@ -85,15 +85,6 @@
       }
     }
 
-    &.conditional {
-      background: $conditional_bg;
-      border-top: solid 10px $conditional;
-
-      span, svg {
-        color: conditional;
-      }
-    }
-
     &.failed,
     &.processing_error {
       background: $failed_bg;
@@ -120,6 +111,15 @@
 
       span, svg {
         color: $warning
+      }
+    }
+
+    &.conditional {
+      background: $passed_bg;
+      border-top: solid 10px $passed;
+
+      span, svg {
+        color: $conditional;
       }
     }
 
@@ -295,6 +295,13 @@ ul {
     a.nav-link:focus,
     a.nav-link:hover {
       color: $warning;
+    }
+  }
+  li.conditional {
+    a.nav-link,
+    a.nav-link:focus,
+    a.nav-link:hover {
+      color: $conditional;
     }
   }
 }

@@ -53,7 +53,7 @@
         </a>
       </div>
     </div>
-    <div class="layout-compare-item pull-left" ng-if="case.status == 'FAILED'">
+    <div class="layout-compare-item pull-left" ng-if="case.status == 'FAILED' || case.status == 'CONDITIONAL'">
       <p class="layout-compare-description">Collected
         <span class="label label-info">{{case.comparator.stepResult.data.collectTimestamp | date:'yyyy-MM-dd HH:mm'}}</span>
       </p>
@@ -68,7 +68,7 @@
         </a>
       </div>
     </div>
-    <div class="layout-compare-item pull-left" ng-if="case.status != 'FAILED'">
+    <div class="layout-compare-item pull-left" ng-if="case.status != 'FAILED' || case.status != 'CONDITIONAL'">
       <p class="layout-compare-description">No difference was detected!</p>
     </div>
   </div>
